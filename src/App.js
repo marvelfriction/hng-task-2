@@ -4,6 +4,8 @@ import LinkButton from './components/LinkButton';
 import Image from './components/Image'
 import ImageHover from './assets/profileImgHover.png';
 import ProfileImage from './assets/profile-image.png';
+import Github from './assets/Icon.png';
+import slack from './assets/slack.svg';
 
 const App = () => {
   return (
@@ -44,6 +46,16 @@ const App = () => {
 
         <a href='https://books.zuri.team/design-rules' target="_blank" rel="noreferrer" id='book_design'>
           <LinkButton name="Ultimate Design Books"/>
+        </a>
+      </div>
+
+      <div className='social_icons'>
+        <a href='https://slack.com'>
+          <Image src={slack} alt='slack' className='slack_icon'/>
+        </a>
+        
+        <a href='https://github.com/Udee101'>
+          <Image src={Github} alt='github' className='git_icon' />
         </a>
       </div>
 
