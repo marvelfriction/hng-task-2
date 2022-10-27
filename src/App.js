@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import LinkButton from './components/LinkButton';
 import Image from './components/Image'
 import ImageHover from './assets/profileImgHover.png';
 import ProfileImage from './assets/profile-image.png';
@@ -18,6 +19,32 @@ const App = () => {
           <p id='twitter'>UdeeFrank</p>
           <p id='slack'>Frankenstylz</p>
         </div>  
+      </div>
+
+      <div className='link_section'>
+        <a href='https://twitter.com/theZuriTeam' target="_blank" rel="noreferrer" id='my_twitter'>
+        <LinkButton name="Twitter Link"/>
+        </a>
+
+        <a href='https://training.zuri.team/' target="_blank" rel="noreferrer" id='btn-zuri'>
+          <LinkButton name="Zuri Team"/>
+        </a>
+
+        <a href='https://books.zuri.team' target="_blank" rel="noreferrer" id='books'>
+          <LinkButton name="Zuri Books"/>
+        </a>
+
+        <a href='https://books.zuri.team/python-for-beginners?ref_id=frankenstylz' target="_blank" rel="noreferrer" id='btn_python'>
+          <LinkButton name="Python Books"/>
+        </a>
+
+        <a href='https://background.zuri.team' target="_blank" rel="noreferrer" id='pitch'>
+          <LinkButton name="Background Check for Coders"/>
+        </a>
+
+        <a href='https://books.zuri.team/design-rules' target="_blank" rel="noreferrer" id='book_design'>
+          <LinkButton name="Ultimate Design Books"/>
+        </a>
       </div>
 
     </div>
