@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
 import LinkButton from './components/LinkButton';
-import Image from './components/Image'
+import Image from './components/Image';
+import Footer from './components/Footer';
+
 import ImageHover from './assets/profileImgHover.png';
 import ProfileImage from './assets/profile-image.png';
 import Github from './assets/Icon.png';
@@ -58,6 +60,10 @@ const App = () => {
           <Image src={Github} alt='github' className='git_icon' />
         </a>
       </div>
+
+      <footer className='footer_container'>
+        <Footer />
+      </footer>
 
     </div>
   )
