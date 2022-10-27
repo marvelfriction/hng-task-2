@@ -6,6 +6,8 @@ import Footer from './components/Footer';
 
 import ImageHover from './assets/profileImgHover.png';
 import ProfileImage from './assets/profile-image.png';
+import ShareProfile from './assets/_Avatar share button1.png';
+import ShareProfileHover from './assets/_Avatar share button_hover.png';
 import Github from './assets/Icon.png';
 import slack from './assets/slack.svg';
 
@@ -13,6 +15,13 @@ const App = () => {
   return (
     <div className='App'>
       <div className="profile_section">
+
+        <div className="share_profile">
+          <Image src={ShareProfileHover} alt='share button' className='share' />
+
+          <Image src={ShareProfile} alt='share button' className='share' />
+        </div>
+
         <div className='img_container'> 
           <Image src={ImageHover} alt='change profile image' className='hover_img' />
 
