@@ -24,17 +24,24 @@ body {
   margin-top: 20px;
 }
 
+.share_profile img {
+  position: absolute;
+  margin-left: 250px;
+}
+
 .img_container img {
   position: absolute;
   margin-left: -46px;
 }
 
-.img_container img:last-of-type {
+.img_container img:last-of-type,
+.share_profile img:last-of-type {
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
 
-.img_container img:last-of-type:hover {
+.img_container img:last-of-type:hover,
+.share_profile img:last-of-type:hover {
   opacity: 0;
 }
 
