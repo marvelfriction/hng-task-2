@@ -119,3 +119,35 @@ a .links {
   color: #667085;
   ;
 }
+
+/* MOBILE VIEW  */
+
+@media screen and (max-width: 480px) {
+  .App {
+    width: 100%;
+  }
+
+  a .links {
+    width: 100%
+  }
+
+  .links h2 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .content {
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+  }
+
+  .footer_text{
+    margin: 16px 0;
+    line-height: 20px;
+  }
+
+  .share_profile {
+    display: none;
+  }
+}
