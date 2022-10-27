@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Image from './components/Image'
+import ImageHover from './assets/profileImgHover.png';
+import ProfileImage from './assets/profile-image.png';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <div className="profile_section">
+        <div className='img_container'> 
+          <Image src={ImageHover} alt='change profile image' className='hover_img' />
+
+          <Image src={ProfileImage} alt="profile" id='profile_img' className='profile-img'/>
+        </div>
+
+        <div className='profile_section_content'>
+          <p id='twitter'>UdeeFrank</p>
+          <p id='slack'>Frankenstylz</p>
+        </div>  
+      </div>
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
