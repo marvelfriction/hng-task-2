@@ -60,11 +60,11 @@ const App = () => {
           <LinkButton name="Python Books"/>
         </a>
 
-        <a href='https://background.zuri.team' target="_blank" rel="noreferrer" id='pitch'>
+        <a href='https://background.zuri.team' target="_blank" title='No More Mistakes With Background check for coders' rel="noreferrer" id='pitch'>
           <LinkButton name="Background Check for Coders"/>
         </a>
 
-        <a href='https://books.zuri.team/design-rules' target="_blank" rel="noreferrer" id='book_design'>
+        <a href='https://books.zuri.team/design-rules' target="_blank" title='The Ultimate Design Book offered for free by Zuri' rel="noreferrer" id='book_design'>
           <LinkButton name="Ultimate Design Books"/>
         </a>
       </div>
