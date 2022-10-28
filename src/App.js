@@ -44,7 +44,7 @@ const App = () => {
       </div>
 
       <div className='link_section'>
-        <a href='https://twitter.com/theZuriTeam' target="_blank" rel="noreferrer" id='my_twitter'>
+        <a href='https://twitter.com/UdeeFrank' target="_blank" rel="noreferrer" id='my_twitter'>
         <LinkButton name="Twitter Link"/>
         </a>
 
