@@ -45,6 +45,10 @@ body {
   opacity: 0;
 }
 
+.more {
+  display: none;
+}
+
 .profile_section_content #twitter {
   font-weight: bold;
   font-size: 20px;
@@ -149,5 +153,23 @@ a .links {
 
   .share_profile {
     display: none;
+  }
+
+  .more {
+    display: block;
+  }
+
+  .more img {
+    position: absolute;
+    margin-left: 120px;
+  }
+
+  .more img:last-of-type {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .more img:last-of-type:hover {
+    opacity: 0;
   }
 }
