@@ -65,7 +65,7 @@ const App = () => {
         </a>
 
         <a href='https://books.zuri.team/design-rules' target="_blank" title='The Ultimate Design Book offered for free by Zuri' rel="noreferrer" id='book_design'>
-          <LinkButton name="Ultimate Design Books"/>
+          <LinkButton name="Design Books"/>
         </a>
       </div>
 
