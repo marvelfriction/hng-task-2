@@ -8,6 +8,8 @@ import ImageHover from './assets/profileImgHover.png';
 import ProfileImage from './assets/profile-image.png';
 import ShareProfile from './assets/_Avatar share button1.png';
 import ShareProfileHover from './assets/_Avatar share button_hover.png';
+import MoreIconHover from './assets/more-hover.png';
+import MoreIcon from './assets/more.png';
 import Github from './assets/Icon.png';
 import slack from './assets/slack.svg';
 
@@ -20,6 +22,13 @@ const App = () => {
           <Image src={ShareProfileHover} alt='share button' className='share' />
 
           <Image src={ShareProfile} alt='share button' className='share' />
+        </div>
+
+        {/* 'more button' for mobile view */}
+        <div className="more">
+          <Image src={MoreIconHover} alt='more button' className='more_btn_hover' />
+
+          <Image src={MoreIcon} alt='more button' className='more_btn' />
         </div>
 
         <div className='img_container'> 
