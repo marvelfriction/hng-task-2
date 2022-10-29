@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 
+/* MOBILE FIRST APPROACH */
 * {
   padding: 0;
   margin: 0;
@@ -11,9 +12,9 @@ body {
 }
 
 .App {
-  font-family: 'Inter';
-  padding: 24px 20px;
-  width: 80%;
+  width: 100%;
+  max-width: 1152px;
+  padding: 24px 15px;
   margin: auto;
 }
 
@@ -24,29 +25,29 @@ body {
   margin-top: 20px;
 }
 
-.share_profile img {
-  position: absolute;
-  margin-left: 250px;
-}
-
 .img_container img {
   position: absolute;
   margin-left: -46px;
 }
 
+.share_profile {
+  display: none;
+}
+
+.more img {
+  position: absolute;
+  margin-left: 120px;
+}
+
 .img_container img:last-of-type,
-.share_profile img:last-of-type {
+.more img:last-of-type {
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
 
 .img_container img:last-of-type:hover,
-.share_profile img:last-of-type:hover {
+.more img:last-of-type:hover {
   opacity: 0;
-}
-
-.more {
-  display: none;
 }
 
 .profile_section_content #twitter {
@@ -79,14 +80,12 @@ a .links {
 }
 
 .links h2 {
-  display: flex;
-  place-content: center;
   margin: 5px auto;
   text-align: center;
   color: #000;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 20px;
 }
 
 .links:hover {
@@ -108,68 +107,59 @@ a .links {
 }
 
 .footer_container {
-  margin-top: 70px;
+  margin-top: 64px;
 }
 
 .content {
-  display: flex;
-  place-content: space-between;
-  padding: 30px 0;
+  margin-top: 24px;
+  display: block;
+  text-align: left;
 }
 
 .footer_text {
   font-weight: 400;
-  line-height: 24px;
+  line-height: 20px;
+  margin: 20px 0;
   color: #667085;
-  ;
 }
 
-/* MOBILE VIEW  */
+/* STYLES FOR LARGER SCREEN */
 
-@media screen and (max-width: 480px) {
-  .App {
-    width: 100%;
-  }
-
-  a .links {
-    width: 100%
-  }
-
+@media screen and (min-width: 780px) {
   .links h2 {
-    font-size: 14px;
-    line-height: 20px;
-  }
-
-  .content {
-    margin-top: 10px;
-    display: block;
-    text-align: left;
-  }
-
-  .footer_text{
-    margin: 16px 0;
-    line-height: 20px;
-  }
-
-  .share_profile {
-    display: none;
-  }
-
-  .more {
-    display: block;
+    font-size: 18px;
   }
 
   .more img {
-    position: absolute;
-    margin-left: 120px;
+    display: none;
   }
 
-  .more img:last-of-type {
+  .share_profile {
+    display: block;
+  }
+
+  .share_profile img {
+    position: absolute;
+    margin-left: 250px;
+  }
+
+  .share_profile img:last-of-type {
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
   }
 
-  .more img:last-of-type:hover {
+  .share_profile img:last-of-type:hover {
     opacity: 0;
+  }
+
+  .content {
+    display: flex;
+    place-content: space-between;
+    padding: 30px 0;
+  }
+
+  .footer_text {
+    margin: 0;
+    line-height: 24px;
   }
 }
