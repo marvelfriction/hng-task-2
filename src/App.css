@@ -13,7 +13,6 @@ body {
 
 .App {
   width: 100%;
-  max-width: 1152px;
   padding: 24px 15px;
   margin: auto;
 }
@@ -62,7 +61,8 @@ body {
 }
 
 .link_section {
-  margin: 40px 0;
+  margin: 40px auto;
+  max-width: 1152px;
 }
 
 a {
@@ -107,7 +107,8 @@ a .links {
 }
 
 .footer_container {
-  margin-top: 64px;
+  max-width: 1440px;
+  margin: 64px auto 0;
 }
 
 .content {
