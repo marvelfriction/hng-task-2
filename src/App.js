@@ -19,20 +19,20 @@ const App = () => {
       <div className="profile_section">
 
         <div className="share_profile">
-          <Image src={ShareProfileHover} alt='share button' className='share' />
+          <Image src={ShareProfileHover} alt='share button' className='share' id='share' />
 
-          <Image src={ShareProfile} alt='share button' className='share' />
+          <Image src={ShareProfile} alt='share button' className='share' id='share' />
         </div>
 
         {/* 'more button' for mobile view */}
         <div className="more">
-          <Image src={MoreIconHover} alt='more button' className='more_btn_hover' />
+          <Image src={MoreIconHover} alt='more button' className='more_btn_hover' id='more_btn' />
 
-          <Image src={MoreIcon} alt='more button' className='more_btn' />
+          <Image src={MoreIcon} alt='more button' className='more_btn' id='more_btn'/>
         </div>
 
         <div className='img_container'> 
-          <Image src={ImageHover} alt='change profile image' className='hover_img' />
+          <Image src={ImageHover} alt='change profile image' className='hover_img' id='hover_img' />
 
           <Image src={ProfileImage} alt="profile" id='profile__img' className='profile-img'/>
         </div>
@@ -71,11 +71,11 @@ const App = () => {
 
       <div className='social_icons'>
         <a href='https://slack.com'>
-          <Image src={slack} alt='slack' className='slack_icon'/>
+          <Image src={slack} alt='slack' className='slack_icon' id='slack_icon'/>
         </a>
         
         <a href='https://github.com/Udee101'>
-          <Image src={Github} alt='github' className='git_icon' />
+          <Image src={Github} alt='github' className='git_icon' id='git_icon' />
         </a>
       </div>
 
