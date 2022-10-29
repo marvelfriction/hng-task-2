@@ -44,11 +44,11 @@ const App = () => {
       </div>
 
       <div className='link_section'>
-        <a href='https://twitter.com/UdeeFrank' target="_blank" rel="noreferrer" id='my_twitter'>
+        <a href='https://twitter.com/UdeeFrank' target="_blank" rel="noreferrer" id='twitter'>
         <LinkButton name="Twitter Link"/>
         </a>
 
-        <a href='https://training.zuri.team/' target="_blank" rel="noreferrer" id='btn-zuri'>
+        <a href='https://training.zuri.team/' target="_blank" rel="noreferrer" id='btn_zuri'>
           <LinkButton name="Zuri Team"/>
         </a>
 
