@@ -34,7 +34,7 @@ const App = () => {
         <div className='img_container'> 
           <Image src={ImageHover} alt='change profile image' className='hover_img' />
 
-          <Image src={ProfileImage} alt="profile" id='profile_img' className='profile-img'/>
+          <Image src={ProfileImage} alt="profile" id='profile__img' className='profile-img'/>
         </div>
 
         <div className='profile_section_content'>
@@ -44,11 +44,11 @@ const App = () => {
       </div>
 
       <div className='link_section'>
-        <a href='https://twitter.com/UdeeFrank' target="_blank" rel="noreferrer" id='twitter'>
+        <a href='https://twitter.com/UdeeFrank' target="_blank" rel="noreferrer" id='my-twitter'>
         <LinkButton name="Twitter Link"/>
         </a>
 
-        <a href='https://training.zuri.team/' target="_blank" rel="noreferrer" id='btn_zuri'>
+        <a href='https://training.zuri.team/' target="_blank" rel="noreferrer" id='btn__zuri'>
           <LinkButton name="Zuri Team"/>
         </a>
 
@@ -56,7 +56,7 @@ const App = () => {
           <LinkButton name="Zuri Books"/>
         </a>
 
-        <a href='https://books.zuri.team/python-for-beginners?ref_id=frankenstylz' target="_blank" rel="noreferrer" id='btn_python'>
+        <a href='https://books.zuri.team/python-for-beginners?ref_id=frankenstylz' target="_blank" rel="noreferrer" id='book__python'>
           <LinkButton name="Python Books"/>
         </a>
 
@@ -64,7 +64,7 @@ const App = () => {
           <LinkButton name="Background Check for Coders"/>
         </a>
 
-        <a href='https://books.zuri.team/design-rules' target="_blank" title='The Ultimate Design Book offered for free by Zuri' rel="noreferrer" id='book_design'>
+        <a href='https://books.zuri.team/design-rules' target="_blank" title='The Ultimate Design Book offered for free by Zuri' rel="noreferrer" id='book__design'>
           <LinkButton name="Design Books"/>
         </a>
       </div>
