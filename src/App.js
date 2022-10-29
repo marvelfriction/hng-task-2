@@ -60,7 +60,7 @@ const App = () => {
           <LinkButton name="Python Books"/>
         </a>
 
-        <a href='https://background.zuri.team' target="_blank" title='No More Mistakes With Background check for coders' rel="noreferrer" id='pitch'>
+        <a href='https://background.zuri.team' target="_blank" title='Make no more mistakes with Background Check for Coders' rel="noreferrer" id='pitch'>
           <LinkButton name="Background Check for Coders"/>
         </a>
 
