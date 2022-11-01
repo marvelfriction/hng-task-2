@@ -38,13 +38,13 @@ const App = () => {
         </div>
 
         <div className='profile_section_content'>
-          <p id='twitter'>UdeeFrank</p>
-          <p id='slack'>Frankenstylz</p>
+          <p id='twitter'>marvelfriction_</p>
+          <p id='slack'>marvelfriction</p>
         </div>  
       </div>
 
       <div className='link_section'>
-        <a href='https://twitter.com/UdeeFrank' target="_blank" rel="noreferrer" id='my-twitter'>
+        <a href='https://twitter.com/marvelfriction_' target="_blank" rel="noreferrer" id='my-twitter'>
         <LinkButton name="Twitter Link"/>
         </a>
 
@@ -70,11 +70,11 @@ const App = () => {
       </div>
 
       <div className='social_icons'>
-        <a href='https://slack.com'>
+        <a href='https://hng9.slack.com'>
           <Image src={slack} alt='slack' className='slack_icon' id='slack_icon'/>
         </a>
         
-        <a href='https://github.com/Udee101'>
+        <a href='https://github.com/marvelfriction'>
           <Image src={Github} alt='github' className='git_icon' id='git_icon' />
         </a>
       </div>
