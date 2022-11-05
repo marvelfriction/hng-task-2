@@ -78,7 +78,7 @@ function Home() {
             </div>
           </a>
 
-          <Link to="/contact" target="_blank" title='You can reach us here' rel="noreferrer" id='contact_us'>
+          <Link to="/contact" target="_blank" title='Click to contact me' rel="noreferrer" id='contact'>
             <div className="links">
               <h2>Contact Me</h2>
             </div>
