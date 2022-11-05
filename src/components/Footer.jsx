@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from './Image';
+// import Image from './Image';
 import I4G from '../assets/I4G.png';
 import Zuri from '../assets/zuri-logo.png';
 
@@ -9,7 +9,7 @@ function Footer() {
       <hr />
       <div className='content'>
         <div>
-          <Image src={Zuri} alt='zuri logo' className='zuri_logo' />
+          <img src={Zuri} alt='zuri logo' className='zuri_logo' />
         </div>
 
         <div className='footer_text'>
@@ -17,11 +17,11 @@ function Footer() {
         </div>
 
         <div>
-          <Image src={I4G} alt='I4g logo' className='i4g_logo' />
+          <img src={I4G} alt='I4g logo' className='i4g_logo' />
         </div>
       </div>
     </>
   )
 }
 
-export default Footer
+export default Footer;

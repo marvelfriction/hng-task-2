@@ -1,7 +1,5 @@
 import React from 'react';
 import './App.css';
-import LinkButton from './components/LinkButton';
-import Image from './components/Image';
 import Footer from './components/Footer';
 
 import ImageHover from './assets/profileImgHover.png';
@@ -19,22 +17,22 @@ const App = () => {
       <div className="profile_section">
 
         <div className="share_profile">
-          <Image src={ShareProfileHover} alt='share button' className='share' id='share' />
+          <img src={ShareProfileHover} alt='share button' className='share' id='share' />
 
-          <Image src={ShareProfile} alt='share button' className='share' id='share' />
+          <img src={ShareProfile} alt='share button' className='share' id='share' />
         </div>
 
         {/* 'more button' for mobile view */}
         <div className="more">
-          <Image src={MoreIconHover} alt='more button' className='more_btn_hover' id='more_btn' />
+          <img src={MoreIconHover} alt='more button' className='more_btn_hover' id='more_btn' />
 
-          <Image src={MoreIcon} alt='more button' className='more_btn' id='more_btn'/>
+          <img src={MoreIcon} alt='more button' className='more_btn' id='more_btn'/>
         </div>
 
         <div className='img_container'> 
-          <Image src={ImageHover} alt='change profile image' className='hover_img' id='hover_img' />
+          <img src={ImageHover} alt='change profile' className='hover_img' id='hover_img' />
 
-          <Image src={ProfileImage} alt="profile" id='profile__img' className='profile-img'/>
+          <img src={ProfileImage} alt="profile" id='profile__img' className='profile-img'/>
         </div>
 
         <div className='profile_section_content'>
@@ -45,37 +43,56 @@ const App = () => {
 
       <div className='link_section'>
         <a href='https://twitter.com/marvelfriction_' target="_blank" rel="noreferrer" id='my-twitter'>
-        <LinkButton name="Twitter Link"/>
+          <div className="links">
+            <h2>Twitter Link</h2>
+          </div>
         </a>
 
         <a href='https://training.zuri.team/' target="_blank" rel="noreferrer" id='btn__zuri'>
-          <LinkButton name="Zuri Team"/>
+          <div className="links">
+            <h2>Zuri Team</h2>
+          </div>
         </a>
 
         <a href='https://books.zuri.team' target="_blank" rel="noreferrer" id='books'>
-          <LinkButton name="Zuri Books"/>
+          <div className="links">
+            <h2>Zuri Books</h2>
+          </div>
         </a>
 
         <a href='https://books.zuri.team/python-for-beginners?ref_id=frankenstylz' target="_blank" rel="noreferrer" id='book__python'>
-          <LinkButton name="Python Books"/>
+          <div className="links">
+            <h2>Python Books</h2>
+          </div>
         </a>
 
         <a href='https://backgroundcheck.zuri.team' target="_blank" title='Make no more mistakes with Background Check for Coders' rel="noreferrer" id='pitch'>
-          <LinkButton name="Background Check for Coders"/>
+          <div className="links">
+            <h2>Background Check for Coders</h2>
+          </div>
         </a>
 
         <a href='https://books.zuri.team/design-rules' target="_blank" title='The Ultimate Design Book offered for free by Zuri' rel="noreferrer" id='book__design'>
-          <LinkButton name="Design Books"/>
+          <div className="links">
+            <h2>Design Books</h2>
+          </div>
+        </a>
+
+        <a href="#" target="_blank" title='You can reach us here' rel="noreferrer" id='contact_us'>
+          <div className="links">
+            <h2>Contact Us</h2>
+          </div>
         </a>
       </div>
 
+      {/* SOCIAL LINKS ICON */}
       <div className='social_icons'>
         <a href='https://hng9.slack.com'>
-          <Image src={slack} alt='slack' className='slack_icon' id='slack_icon'/>
+          <img src={slack} alt='slack' className='slack_icon' id='slack_icon'/>
         </a>
         
         <a href='https://github.com/marvelfriction'>
-          <Image src={Github} alt='github' className='git_icon' id='git_icon' />
+          <img src={Github} alt='github' className='git_icon' id='git_icon' />
         </a>
       </div>
 
@@ -88,3 +105,30 @@ const App = () => {
 }
 
 export default App
+
+
+
+
+
+//Image
+// import React from 'react'
+// const Image = ({src, alt, className, id}) => {
+//   return (
+//     <>
+//       <img src={src} alt={alt} className={className} id={id}/>
+//     </>
+//   )
+// }
+// export default Image
+
+
+// Link button
+// import React from "react";
+// const LinkButton = (props) => {
+//   return (
+//     <div className="links">
+//       <h2>{props.name}</h2>
+//     </div>
+//   )
+// }
+// export default LinkButton; 
