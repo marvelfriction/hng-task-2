@@ -4,7 +4,7 @@ const FormInput = (props) => {
   const { label, onChange, id, hint, ...otherProps } = props;
   return (
     <div id="form_input">
-      <label>{ label }</label>
+      <label htmlFor={id}>{ label }</label>
       <input {...otherProps} onChange={onChange} id={id} required/>
       {hint ? <p className="hint">hint: example@gmail.com</p> : null}
     </div>

@@ -86,26 +86,27 @@ const Form = () => {
             })}
 
             <div className='message_box'>
-            <label className='label' htmlFor='message'>Message</label>
-            <textarea 
-                name="message" 
-                id="message" 
-                cols="30" 
-                rows="10" 
-                placeholder="Send me a message and I'll reply as soon as possible" 
-                onChange={onTextareaChange}  
-                required
-                onBlur={handleFocus} focused={focused.toString()}>
-            </textarea><p className='error_msg'>{errorMessage}</p>
+                <label className='label' htmlFor='message'>Message</label>
+                <textarea 
+                    name="message" 
+                    id="message" 
+                    cols="30" 
+                    rows="10" 
+                    placeholder="Send me a message and I'll reply as soon as possible" 
+                    onChange={onTextareaChange}  
+                    required
+                    onBlur={handleFocus} focused={focused.toString()}>
+                </textarea>
+                <p className='error_msg'>{errorMessage}</p>
             </div>
 
             <div className="check">
-            <input 
-                type="checkbox" 
-                name="checkbox" 
-                id="check_box" 
-                required/>
-            <label htmlFor='check_box'>You agree to providing your data to Marvelous Ezechi who may contact you.</label>
+                <input 
+                    type="checkbox" 
+                    name="checkbox" 
+                    id="check_box" 
+                    required/>
+                <label htmlFor='check_box'>You agree to providing your data to Marvelous Ezechi who may contact you.</label>
             </div>
 
             <button onSubmit={handleSubmit} id='btn__submit' type='submit'>Send message</button>
