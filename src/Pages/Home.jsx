@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "react-router-dom"
 
 import ImageHover from '../assets/profileImgHover.png';
 import ProfileImage from '../assets/profile-image.png';
@@ -78,11 +77,11 @@ function Home() {
             </div>
           </a>
 
-          <Link to="/contact" target="_blank" title='Click to contact me' rel="noreferrer" id='contact'>
+          <a href="/contact" target="_blank" title='Click to contact me' rel="noreferrer" id='contact'>
             <div className="links">
               <h2>Contact Me</h2>
             </div>
-          </Link>
+          </a>
         </div>
 
         {/* SOCIAL LINKS ICON */}
